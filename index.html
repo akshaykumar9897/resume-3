@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 0px 40px 20px 40px;
+            margin: 43px 50px 30px 50px;
+            border-radius: 10px; 
+           
+        }
+        .cool{
+            padding: 4px;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+         <h1>Registration Form</h1>
+            <h3> Enter your Details below.</h3>
+            <div>
+                <ul >
+                  <li >
+                    <input Type="Email" Required Placeholder="Email" Value="your_email@gmail.com" Name="Email" Autofocus />
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li >
+                    <input Type="Password" Required Placeholder="Password" Name="Password" Minlength="0" Maxlength="9" />
+                  </li>
+                </ul>
+                <h5>
+                   <p><strong>!Type A Complex Password With 8-20 Characters.</strong> </p>
+                </h5>
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    <input Type="Number" Required Placeholder="+91 Phone Number" Name="Phone Number"/>
+                  </li>
+                </ul>
+              </div>
+              <hr />
+              <h4>
+              
+                  <P><strong> Your Profession:</strong></P>
+         
+              </h4>
+              <ul>
+                <li>
+                  <input Id="Student" Type="Radio" , Name="Profession" Value="Student"/>
+                  <label For="Student">Student</label>
+                  <input Id="Teacher" Type="Radio" , Name="Profession" Value="Teacher"/>
+                  <label For="Teacher">Teacher</label>
+                  <input Id="Developer" Type="Radio" , Name="Profession" Value="Developer"/>
+                  <label For="Developer">Developer</label>
+                </li>
+              </ul>
+              <label For="Stage">Choose The Stage If You Are (Student)</label>
+              <select Name="Stage" Id="Stage">
+                <Optgroup Label="Primary Stage">
+                  <Option Value="First Primary">First Primary</Option>
+                  <Option Value="Second Primary">Second Primary</Option>
+                  <Option Value="Third Primary">Third Primary</Option>
+                  <Option Value="Fourth Primary">Fourth Primary</Option>
+                  <Option Value="Fifth Primary">Fifth Primary</Option>
+                  <Option Value="Sixth Primary">Sixth Primary</Option>
+                </Optgroup>
+                <Optgroup Label="Preparatory Stage">
+                  <Option Value="First Preparatory">First Preparatory</Option>
+                  <Option Value="Second Preparatory">Second Preparatory</Option>
+                  <Option Value="Third Preparatory">Third Preparatory</Option>
+                </Optgroup>
+                <Optgroup Label="Secondary Stage">
+                  <Option Value="First Secondary">First Secondary</Option>
+                  <Option Value="Second Secondary">Second Secondary</Option>
+                  <Option Value="Third Secondary">Third Secondary</Option>
+                </Optgroup>
+              </select>
+              <hr />
+              <ul>
+                <li >
+                  <label For="D">Enter Your Birth Date.</label>
+                  <input Type="Date" Name="Date" Id="D"/>
+                </li>
+              </ul>
+              <hr />
+              <div>
+                <ul>
+                  <li >
+                    <input Type="Text" Placeholder="Any Notes" Name="Nots"/>
+                  </li>
+                </ul>
+              </div>
+              <Hr />
+              <input class="cool" Type="Submit" />
+              <input class="cool" Type="Reset" Value="Reset" />
+    </form>
+</body>
+</html>
